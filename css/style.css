@@ -1,0 +1,255 @@
+body,html{
+    overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body{
+    margin: 0;
+    background-color:#000;
+    color:#fff;
+}
+
+
+a,a:active,a:hover{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+#menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:#000;
+    top: 0;
+    z-index: 1200;
+}
+
+#menu .logo-block a img{
+    width: 100px;
+}
+
+#menu .items ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    font-size: 20px;
+}
+#menu .items ul li{
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #ffffff;
+    transition: 300ms;
+}
+#menu .items ul li:hover a{
+    color: #000 !important;
+}
+#menu .items ul li:hover{
+    background-color: #fff;
+    color: #000;
+    transition:300ms;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height:700px;
+}
+
+#header img{
+    height: 700px;
+    width: 100%;
+    
+}
+#header h1{
+    z-index: 5;
+    position: absolute;
+    color: #00dc26;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border:3px solid #00dc26;
+    padding: 1rem;
+    text-align: center;
+}
+#header::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#header > * {
+    z-index: 2;
+}
+
+#header .block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.slide img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.prev, .next {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  background-color: #ccc;
+}
+
+#intro{
+    padding: 4em 1em;
+    font-size: 25px;
+}
+#intro .content{
+    display: flex;
+}
+#intro h2{
+    font-size: 50px;
+}
+
+#intro img{
+    width:200px ;
+    border-radius: 100px;
+}
+#skills{
+    padding: 4em 1em;
+}
+#skills .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#skills .items .item {
+    width: 50%;
+    padding: 0px 10px;
+    position: relative;
+}
+#skills .items .item:nth-child(2n) {
+    margin-left: 50%;
+    text-align: right;
+}
+
+#skills .items .item:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border-left: 1px solid #fff;
+    height: 100%;
+}
+
+#skills .items .item:nth-child(2n+1)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+#skills .items .item:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-left: 1px solid #fff;
+    height: 100%;
+}
+
+#skills .items .item:nth-child(2n)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+#contacts > div{
+    padding: 15px;
+}
+#contacts{
+    width: 950px;
+    text-align: center;
+}
+#contacts .icon i{
+    font-size: 30px;
+    margin: 5px 10px;
+}
+.human #photo{
+    text-align: center;
+}
+.rules{
+    display: flex;
+    justify-content: center;
+}
+.rules #tabl{
+    width: 350px;
+    text-align: center;
+}
+.human h2{
+    padding: 0px 125px;
+    font-size: 25px;
+    font-size: 50px;
+}
+.hum{
+    margin: 95px 0px;
+}
